@@ -1,0 +1,13 @@
+<!-- <ul>
+    <li ng-repeat="todoTemp in $ctrl.todos.todos track by $index">{{todoTemp}}</li>
+</ul> -->
+<md-toolbar layout="row" class="md-hue-3">
+    <div class="md-toolbar-tools">
+      <span>Todos List</span>
+    </div>
+  </md-toolbar>
+
+  <md-list-item ng-repeat="todoTemp in $ctrl.todos.todos track by $index">
+    <p> {{todoTemp}}</p>
+    <md-checkbox class="md-secondary" ng-model="topping.wanted"></md-checkbox>
+  </md-list-item>
